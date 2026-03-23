@@ -15,6 +15,4 @@ const strider : ICharacter = {
 
 console.log(strider);
 
-
-
 export {};
