@@ -1,13 +1,13 @@
 
 
 export class Person {
-    public name:string;
-    private address:string;
+    // public name:string;
+    // private address:string;
 
-    constructor(name:string, address:string) {
-        this.name = name;
-        this.address = address;
-    }
+    constructor(
+        public name:string, 
+        private address:string = 'No Address'
+    ) {}
 
     get getAddress() : string {
         return this.address;
@@ -15,6 +15,7 @@ export class Person {
 
 }
 
-const ironman = new Person('Ironman', 'New York');
+const ironman = new Person('Ironman');
 
-console.log(ironman.name);
+console.log(ironman);
+console.log(ironman.getAddress)
